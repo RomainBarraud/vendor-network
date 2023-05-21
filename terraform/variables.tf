@@ -7,15 +7,13 @@ variable "app_name" {
 }
 
 variable "public_subnets" {
-    description = "Public subnets"
-    default = ["10.10.100.0/24", "10.10.101.0/24"]
-    type = list
+  description = "List of public subnets"
+  default     = ["10.10.100.0/24", "10.10.101.0/24"]
 }
 
 variable "private_subnets" {
-    description = "Private subnets"
-    default = ["10.10.0.0/24", "10.10.1.0/24"]
-    type = list
+  description = "List of private subnets"
+  default     = ["10.10.0.0/24", "10.10.1.0/24"]
 }
 
 variable "availability_zones" {
